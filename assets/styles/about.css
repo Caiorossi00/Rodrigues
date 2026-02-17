@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #1f1f1f;
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+#sobre {
+  min-height: 100vh;
+  padding: 48px 24px 60px;
+  background: repeating-linear-gradient(
+    45deg,
+    #111,
+    #111 10px,
+    #0d0d0d 10px,
+    #0d0d0d 20px
+  );
+}
+
+#sobre h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #ff8c00;
+  margin-bottom: 24px;
+  position: relative;
+  display: inline-block;
+}
+
+#sobre h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 4px;
+  background: #ff8c00;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+
+#sobre p {
+  font-size: 22px;
+  color: #d4d4d4;
+  max-width: 700px;
+}
+
+.back-home {
+  margin-top: 50px;
+}
+
+.back-home a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.back-home button {
+  background: linear-gradient(180deg, #ffa733, #ff8c00);
+  border: none;
+  border-radius: 12px;
+  padding: 24px 28px;
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.25);
+  transition:
+    transform 0.1s ease,
+    filter 0.2s ease;
+  font-family: inherit;
+}
+
+.back-home button:hover {
+  filter: brightness(1.1);
+}
+
+.back-home button:active {
+  transform: translateY(2px);
+}
+
+@media (min-width: 768px) {
+  #sobre {
+    padding: 80px 80px;
+  }
+
+  #sobre h1 {
+    font-size: 55px;
+  }
+
+  #sobre p {
+    font-size: 2.5em;
+  }
+}

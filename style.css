@@ -5,19 +5,14 @@
 }
 
 body {
-  min-height: 100vh;
   background: #1f1f1f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-family: "Inter", sans-serif;
 }
 
 .card {
-  width: 360px;
+  width: 100%;
+  min-height: 100vh;
   background: #0f0f0f;
-  border-radius: 24px;
-  overflow: hidden;
 }
 
 .top {
@@ -35,8 +30,8 @@ body {
 }
 
 .avatar {
-  width: 160px;
-  height: 160px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   border: 2px solid #000;
   overflow: hidden;
@@ -51,7 +46,7 @@ body {
 }
 
 .content {
-  padding: 32px 24px;
+  padding: 32px 20px 48px;
   background: repeating-linear-gradient(
     45deg,
     #111,
@@ -60,19 +55,19 @@ body {
     #0d0d0d 20px
   );
   text-align: center;
+  margin-top: 10px;
 }
 
 .content h1 {
-  font-family: "Bebas Neue", sans-serif;
   color: #fff;
-  font-size: 30px;
-  letter-spacing: 1px;
-  margin-bottom: 6px;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .content p {
   color: #ff8c00;
-  font-size: 16px;
+  font-size: 15px;
   margin-bottom: 32px;
 }
 
@@ -92,21 +87,47 @@ button {
   border: none;
   border-radius: 14px;
   padding: 16px;
-  font-size: 18px;
-  font-weight: bold;
-  color: #000;
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
   cursor: pointer;
   box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.25);
-  transition: transform 0.1s ease, filter 0.2s ease;
+  transition:
+    transform 0.1s ease,
+    filter 0.2s ease;
   font-family: inherit;
-}
-
-button:hover {
-  filter: brightness(1.05);
 }
 
 button:active {
   transform: translateY(2px);
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.socials a {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #ff8c00;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  text-decoration: none;
+  transition:
+    transform 0.2s ease,
+    filter 0.2s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-4px);
+  filter: brightness(1.1);
 }
 
 .dots.bottom {
