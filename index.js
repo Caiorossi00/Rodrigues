@@ -6,9 +6,6 @@ function enviarWhatsapp() {
 }
 
 function abrirMaps() {
-  const latitude = -32.560123;
-  const longitude = -53.375456;
-
-  const url = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+  const url = "https://www.google.com/maps?q=-32.558339,-53.357746";
   window.open(url, "_blank");
 }
