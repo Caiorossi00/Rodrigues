@@ -6,9 +6,9 @@ function enviarWhatsapp() {
 }
 
 function abrirMaps() {
-  const endereco = "Corredor das Tropas, 794, Jaguarão";
-  const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
-    endereco
-  )}`;
+  const latitude = -32.560123;
+  const longitude = -53.375456;
+
+  const url = `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
   window.open(url, "_blank");
 }
