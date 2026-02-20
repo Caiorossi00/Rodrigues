@@ -1,6 +1,6 @@
 function enviarWhatsapp() {
-  const numero = "5553999999999";
-  const mensagem = "Olá, gostaria de mais informações sobre os serviços.";
+  const numero = "555384796866";
+  const mensagem = "Olá, vim pelo site, gostaria de mais informações sobre os serviços.";
   const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
   window.open(url, "_blank");
 }
